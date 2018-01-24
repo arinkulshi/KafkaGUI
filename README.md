@@ -8,7 +8,8 @@ and messages would be pushed by selected topic. These messages would then be rea
 
 # Why Apache Kafka
 
-      Lets say you have one website and one database. Your database is your source and your website becomes your target. 
+        
+  Lets say you have one database and one website. Your database can be your source and your website can your target. 
 It will be trivial for messages to be recieived and stored in the database and read for the database to be displayed on the 
 website. However, this configuration gets complicated very quickly if you have multiple sources and multiple targets.
 It becomes difficult to integrate every source with every database. 
@@ -50,7 +51,7 @@ You will be setting up a maven project so you need to download the .pom file tha
 https://github.com/dibbhatt/kafka-spark-consumer/blob/master/pom.xml 
 You can download this .pom file just keep in mind to update the versions
 
-###Configuring Kafka 
+### Configuring Kafka 
 
 Unpack the Kafka APK and go to config. You will notice a file called server properties. 
 This file will have a host number. Choose the appropriate host number for your cofiguration. 
@@ -67,7 +68,7 @@ Use this command to start a new topic. In the case of this program the topic is 
 Use the number of partitions and replication you deem appropriate
 bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic medical
 
-###Running the Java Program
+### Running the Java Program
 
 Open intellji and open a new Maven Project using default config.
 Replace the dependicies in the .pom file from Maven with the .pom file you downloaded earlier. Keep the rest of the file the same. Only copy the dependecies.
